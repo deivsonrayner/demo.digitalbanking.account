@@ -34,3 +34,5 @@ spec:
         env:
           - name: PORT
             value : "{{ .Values.service.servicePort }}"
+          - name: APPLICATION_NAME
+            value: "{{ .Release.Name }}"

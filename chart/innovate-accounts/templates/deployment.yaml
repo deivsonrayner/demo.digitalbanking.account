@@ -21,7 +21,7 @@ spec:
       - envFrom:
         - configMapRef:
             name: {{  .Chart.Name }}-configmap
-      - name: "{{  .Chart.Name  }}"
+        name: "{{  .Chart.Name  }}"
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         livenessProbe:

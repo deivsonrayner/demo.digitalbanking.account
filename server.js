@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require('dotenv').config({silent: true, path: `${__dirname}/.env`});
 
 var server = require('./app');
-var port = 3400;
+var port = 80;
 
 console.log(`Running on ${process.env.BASE_PATH}:${port}, connecting to ${process.env.MONGO_URL}`)
 

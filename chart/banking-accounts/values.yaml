@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: us.icr.io/digital-banking/banking-accounts
+  repository: us.icr.io/digital-banking/banking-account
   tag: 0.1
   pullPolicy: Always
   resources:
@@ -25,3 +25,5 @@ hpa:
       targetAverageUtilization: 80
     memory:
       targetAverageUtilization: 80
+ingress:
+  host: banking-account.iks-cluster.sao01.containers.appdomain.cloud

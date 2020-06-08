@@ -1,0 +1,218 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    architecture: x86_64
+    authoritative-source-url: registry.access.redhat.com
+    build-date: 2020-01-30T08:16:17.662981
+    cni.projectcalico.org/podIP: 172.30.7.125/32
+    cni.projectcalico.org/podIPs: 172.30.7.125/32
+    commit.image.appsody.dev/author: deivsonrayner@gmail.com <master123>
+    commit.image.appsody.dev/committer: deivsonrayner@gmail.com <master123>
+    commit.image.appsody.dev/date: Wed Feb 19 09:12:55 2020 -0800
+    commit.image.appsody.dev/message: Initial Commit on V2
+    commit.stack.appsody.dev/author: Steve Groeger <groeges@uk.ibm.com>
+    commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
+    commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
+    commit.stack.appsody.dev/date: Tue Mar 10 21:35:36 2020 +0000
+    commit.stack.appsody.dev/message: 'Merge pull request #313 from groeges/release-0.6'
+    description: This image contains the Kabanero development stack for the Nodejs
+      Express collection
+    distribution-scope: public
+    help: For more information visit https://github.com/sclorg/s2i-nodejs-container
+    image.opencontainers.org/created: 2020-04-06T17:20:11-03:00
+    image.opencontainers.org/documentation: https://github.com/deivsonrayner/demo.digitalbanking.account
+    image.opencontainers.org/revision: ec66c1db1620c4b0aec935d52fec38033d085fbf
+    image.opencontainers.org/source: https://github.com/deivsonrayner/demo.digitalbanking.account/tree/v2
+    image.opencontainers.org/url: https://github.com/deivsonrayner/demo.digitalbanking.account
+    k8s.io/description: Node.js 10 available as container is a base platform for building
+      and running various Node.js 10 applications and frameworks. Node.js is a platform
+      built on Chrome's JavaScript runtime for easily building fast, scalable network
+      applications. Node.js uses an event-driven, non-blocking I/O model that makes
+      it lightweight and efficient, perfect for data-intensive real-time applications
+      that run across distributed devices.
+    k8s.io/display-name: Node.js 10
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "k8s-pod-network",
+          "ips": [
+              "172.30.7.125"
+          ],
+          "dns": {}
+      }]
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"appsody.dev/v1beta1","kind":"AppsodyApplication","metadata":{"annotations":{"architecture":"x86_64","authoritative-source-url":"registry.access.redhat.com","build-date":"2020-01-30T08:16:17.662981","commit.image.appsody.dev/author":"deivsonrayner@gmail.com \u003cmaster123\u003e","commit.image.appsody.dev/committer":"deivsonrayner@gmail.com \u003cmaster123\u003e","commit.image.appsody.dev/date":"Wed Feb 19 09:12:55 2020 -0800","commit.image.appsody.dev/message":"Initial Commit on V2","commit.stack.appsody.dev/author":"Steve Groeger \u003cgroeges@uk.ibm.com\u003e","commit.stack.appsody.dev/committer":"GitHub \u003cnoreply@github.com\u003e","commit.stack.appsody.dev/contextDir":"/incubator/nodejs-express","commit.stack.appsody.dev/date":"Tue Mar 10 21:35:36 2020 +0000","commit.stack.appsody.dev/message":"Merge pull request #313 from groeges/release-0.6","description":"This image contains the Kabanero development stack for the Nodejs Express collection","distribution-scope":"public","help":"For more information visit https://github.com/sclorg/s2i-nodejs-container","image.opencontainers.org/created":"2020-04-06T17:20:11-03:00","image.opencontainers.org/documentation":"https://github.com/deivsonrayner/demo.digitalbanking.account","image.opencontainers.org/revision":"ec66c1db1620c4b0aec935d52fec38033d085fbf","image.opencontainers.org/source":"https://github.com/deivsonrayner/demo.digitalbanking.account/tree/v2","image.opencontainers.org/url":"https://github.com/deivsonrayner/demo.digitalbanking.account","k8s.io/description":"Node.js 10 available as container is a base platform for building and running various Node.js 10 applications and frameworks. Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.","k8s.io/display-name":"Node.js 10","maintainer":"SoftwareCollections.org \u003csclorg@redhat.com\u003e","name":"kabanero/nodejs-express","openshift.io/expose-services":"8080:http","openshift.io/tags":"builder,nodejs,nodejs10","redhat.com/build-host":"cpt-1008.osbs.prod.upshift.rdu2.redhat.com","redhat.com/component":"nodejs-10-container","redhat.com/deployments-dir":"/opt/app-root/src","redhat.com/dev-mode":"DEV_MODE:false","redhat.com/dev-mode.port":"DEBUG_PORT:5858","redhat.com/license_terms":"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI","release":"66","s2i.io/scripts-url":"image:///usr/libexec/s2i","s2i.openshift.io/scripts-url":"image:///usr/libexec/s2i","stack.appsody.dev/authors":"Chris Bailey \u003ccnbailey@gmail.com\u003e, Neeraj Laad \u003cneeraj.laad@gmail.com\u003e","stack.appsody.dev/configured":"docker.io/kabanero/nodejs-express:0.2","stack.appsody.dev/created":"2020-03-10T21:45:40Z","stack.appsody.dev/description":"Express web framework for Node.js","stack.appsody.dev/documentation":"https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/README.md","stack.appsody.dev/licenses":"Apache-2.0","stack.appsody.dev/revision":"5f7634c970b880bef90eeea4288153249e172d61","stack.appsody.dev/source":"https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/image","stack.appsody.dev/tag":"docker.io/kabanero/nodejs-express:0.2.10","stack.appsody.dev/title":"Node.js Express","stack.appsody.dev/url":"https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express","summary":"Image for Kabanero Node.js Express development","url":"https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/nodejs-10/images/1-66","usage":"s2i build \u003cSOURCE-REPOSITORY\u003e ubi8/nodejs-10:latest \u003cAPP-NAME\u003e","vcs-ref":"6bc1753cc6499a5573f9fac87a839bc3fa7798d2","vcs-type":"git","vendor":"Kabanero","version":"0.2.10"},"creationTimestamp":null,"labels":{"app":"banking-accounts","image.opencontainers.org/title":"banking-accounts","solution":"digital-banking","stack.appsody.dev/id":"nodejs-express","stack.appsody.dev/version":"0.2.10"},"name":"banking-accounts","namespace":"digital-banking"},"spec":{"applicationImage":"us.icr.io/digital-banking-v2/banking-accounts:1.0.0","createKnativeService":false,"env":[{"name":"MONGO_URL","value":"mongodb://169.57.206.164:27017/local"}],"expose":false,"livenessProbe":{"failureThreshold":12,"httpGet":{"path":"/health","port":3000},"initialDelaySeconds":5,"periodSeconds":2},"monitoring":{"labels":{"k8s-app":"banking-accounts"}},"pullPolicy":"Always","pullSecret":"ibm-registry","readinessProbe":{"failureThreshold":12,"httpGet":{"path":"/health","port":3000},"initialDelaySeconds":5,"periodSeconds":2,"timeoutSeconds":1},"replicas":1,"service":{"annotations":{"prometheus.io/scrape":"true"},"port":3000,"type":"NodePort"},"stack":"nodejs-express","version":"1.0.0"},"status":{}}
+    maintainer: SoftwareCollections.org <sclorg@redhat.com>
+    name: kabanero/nodejs-express
+    openshift.io/expose-services: 8080:http
+    openshift.io/scc: restricted
+    openshift.io/tags: builder,nodejs,nodejs10
+    redhat.com/build-host: cpt-1008.osbs.prod.upshift.rdu2.redhat.com
+    redhat.com/component: nodejs-10-container
+    redhat.com/deployments-dir: /opt/app-root/src
+    redhat.com/dev-mode: DEV_MODE:false
+    redhat.com/dev-mode.port: DEBUG_PORT:5858
+    redhat.com/license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
+    release: "66"
+    s2i.io/scripts-url: image:///usr/libexec/s2i
+    s2i.openshift.io/scripts-url: image:///usr/libexec/s2i
+    stack.appsody.dev/authors: Chris Bailey <cnbailey@gmail.com>, Neeraj Laad <neeraj.laad@gmail.com>
+    stack.appsody.dev/configured: docker.io/kabanero/nodejs-express:0.2
+    stack.appsody.dev/created: 2020-03-10T21:45:40Z
+    stack.appsody.dev/description: Express web framework for Node.js
+    stack.appsody.dev/documentation: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/README.md
+    stack.appsody.dev/licenses: Apache-2.0
+    stack.appsody.dev/revision: 5f7634c970b880bef90eeea4288153249e172d61
+    stack.appsody.dev/source: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express/image
+    stack.appsody.dev/tag: docker.io/kabanero/nodejs-express:0.2.10
+    stack.appsody.dev/title: Node.js Express
+    stack.appsody.dev/url: https://github.com/kabanero-io/collections/tree/master/incubator/nodejs-express
+    summary: Image for Kabanero Node.js Express development
+    url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/nodejs-10/images/1-66
+    usage: s2i build <SOURCE-REPOSITORY> ubi8/nodejs-10:latest <APP-NAME>
+    vcs-ref: 6bc1753cc6499a5573f9fac87a839bc3fa7798d2
+    vcs-type: git
+    vendor: Kabanero
+    version: 0.2.10
+  creationTimestamp: 2020-04-06T21:22:43Z
+  generateName: banking-accounts-7bffc57d7-
+  labels:
+    app: banking-accounts
+    app.kubernetes.io/instance: banking-accounts
+    app.kubernetes.io/managed-by: appsody-operator
+    app.kubernetes.io/name: banking-accounts
+    app.kubernetes.io/version: 1.0.0
+    image.opencontainers.org/title: banking-accounts
+    pod-template-hash: 7bffc57d7
+    solution: digital-banking
+    stack.appsody.dev/id: nodejs-express
+    stack.appsody.dev/version: 0.2.10
+  name: banking-accounts-7bffc57d7-7jc4c
+  namespace: digital-banking
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: banking-accounts-7bffc57d7
+    uid: 0a7f432f-2551-4cbb-886d-119e0b1d284c
+  resourceVersion: "177229"
+  selfLink: /api/v1/namespaces/digital-banking/pods/banking-accounts-7bffc57d7-7jc4c
+  uid: 3a45d5b7-a3bd-4162-88b5-306b12d254b8
+spec:
+  containers:
+  - env:
+    - name: MONGO_URL
+      value: mongodb://169.57.206.164:27017/local
+    image: us.icr.io/digital-banking-v2/banking-accounts:1.0.0
+    imagePullPolicy: Always
+    livenessProbe:
+      failureThreshold: 12
+      httpGet:
+        path: /health
+        port: 3000
+        scheme: HTTP
+      initialDelaySeconds: 5
+      periodSeconds: 2
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: app
+    ports:
+    - containerPort: 3000
+      name: 3000-tcp
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 12
+      httpGet:
+        path: /health
+        port: 3000
+        scheme: HTTP
+      initialDelaySeconds: 5
+      periodSeconds: 2
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources: {}
+    securityContext:
+      capabilities:
+        drop:
+        - KILL
+        - MKNOD
+        - SETGID
+        - SETUID
+      runAsUser: 1002750000
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: banking-accounts-token-5dd6j
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  imagePullSecrets:
+  - name: ibm-registry
+  nodeName: 10.150.50.199
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 1002750000
+    seLinuxOptions:
+      level: s0:c52,c49
+  serviceAccount: banking-accounts
+  serviceAccountName: banking-accounts
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: banking-accounts-token-5dd6j
+    secret:
+      defaultMode: 420
+      secretName: banking-accounts-token-5dd6j
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: 2020-04-06T21:22:43Z
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: 2020-04-06T21:22:43Z
+    message: 'containers with unready status: [app]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: 2020-04-06T21:22:43Z
+    message: 'containers with unready status: [app]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: 2020-04-06T21:22:43Z
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - image: us.icr.io/digital-banking-v2/banking-accounts:1.0.0
+    imageID: ""
+    lastState: {}
+    name: app
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        message: Back-off pulling image "us.icr.io/digital-banking-v2/banking-accounts:1.0.0"
+        reason: ImagePullBackOff
+  hostIP: 10.150.50.199
+  phase: Pending
+  podIP: 172.30.7.125
+  podIPs:
+  - ip: 172.30.7.125
+  qosClass: BestEffort
+  startTime: 2020-04-06T21:22:43Z

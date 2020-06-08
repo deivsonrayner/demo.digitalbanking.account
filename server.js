@@ -2,7 +2,6 @@
 //require('appmetrics-dash').attach();
 //require('appmetrics-prometheus').attach();
 const mongoose = require('mongoose');
-//require('dotenv').config({silent: true, path: `${__dirname}/.env`});
 
 var server = require('./app');
 var port = 3000;

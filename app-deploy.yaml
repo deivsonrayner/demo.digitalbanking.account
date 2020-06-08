@@ -7,8 +7,8 @@ metadata:
     build-date: 2020-01-30T08:16:17.662981
     commit.image.appsody.dev/author: deivsonrayner@gmail.com <master123>
     commit.image.appsody.dev/committer: deivsonrayner@gmail.com <master123>
-    commit.image.appsody.dev/date: Mon Jun 8 10:34:34 2020 -0300
-    commit.image.appsody.dev/message: v2
+    commit.image.appsody.dev/date: Mon Jun 8 19:00:39 2020 -0300
+    commit.image.appsody.dev/message: teste
     commit.stack.appsody.dev/author: kilnerm <38245247+kilnerm@users.noreply.github.com>
     commit.stack.appsody.dev/committer: GitHub <noreply@github.com>
     commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
@@ -18,9 +18,9 @@ metadata:
       Express collection
     distribution-scope: public
     help: For more information visit https://github.com/sclorg/s2i-nodejs-container
-    image.opencontainers.org/created: "2020-06-08T11:05:15-03:00"
+    image.opencontainers.org/created: "2020-06-08T19:24:13-03:00"
     image.opencontainers.org/documentation: https://github.com/deivsonrayner/demo.digitalbanking.account
-    image.opencontainers.org/revision: b5e49beb19b2858528050c982a08db370ba5bd14-modified
+    image.opencontainers.org/revision: e77e6a332b4a607109caaeff7a3297fd9337afbf-modified
     image.opencontainers.org/source: https://github.com/deivsonrayner/demo.digitalbanking.account/tree/v2
     image.opencontainers.org/url: https://github.com/deivsonrayner/demo.digitalbanking.account
     k8s.io/description: Node.js 10 available as container is a base platform for building
@@ -70,7 +70,7 @@ metadata:
     stack.appsody.dev/version: 0.2.10
   name: banking-accounts
 spec:
-  applicationImage: us.icr.io/digital-banking-v2/banking-accounts:1.0.0
+  applicationImage: deivsonrayner/demo.digitalbanking.account:0.0.1
   createKnativeService: false
   env:
   - name: MONGO_URL

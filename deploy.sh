@@ -1,1 +1,1 @@
-appsody deploy --no-build --namespace digital-banking
+appsody deploy --no-build --no-operator-install --namespace digital-banking
